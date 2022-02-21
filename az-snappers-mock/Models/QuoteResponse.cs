@@ -8,8 +8,10 @@ namespace az_snappers_mock.Models
     {
         public decimal  HouseCost    { get; set; }
         public bool IsPreapproved { get; set; }
-        public string RateofInterest { get; set; }
-        
+        public string APR { get; set; }
+
+        public string DisplayName { get; set; }
+
 
     }
 }

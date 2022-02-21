@@ -10,9 +10,9 @@ namespace az_snappers_mock.Controllers
     {
         
         [HttpGet]
-        public string Get()
+        public string Get(decimal HouseCost = 5000000)
         {
-            QuoteResponse response = new QuoteResponse() { HouseCost = 25000000, IsPreapproved = true, RateofInterest = "2.40" };
+            QuoteResponse response = new QuoteResponse() { HouseCost = 25000000, IsPreapproved = true, APR = "4.60" , DisplayName = "Morgan Stanley Private Bank, National Association - Fixed Rate, 30 Years" };
             var jsonresponse = Newtonsoft.Json.JsonConvert.SerializeObject(response);
             return jsonresponse;
         }
